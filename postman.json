@@ -1,0 +1,85 @@
+{
+  "info": {
+    "name": "LexCheck",
+    "description": null,
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Compliant",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3000/validate",
+          "protocol": "http",
+          "host": ["localhost:3000"],
+          "path": ["api", "orders"],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_id\": \"U-1234\",\n  \"age\": 25,\n  \"document_status\": \"VERIFIED\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Underage",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3000/validate",
+          "protocol": "http",
+          "host": ["localhost:3000"],
+          "path": ["api", "orders"],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_id\": \"U-5678\",\n  \"age\": 17,\n  \"document_status\": \"VERIFIED\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Pending",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3000/validate",
+          "protocol": "http",
+          "host": ["localhost:3000"],
+          "path": ["api", "orders"],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_id\": \"U-9012\",\n  \"age\": 30,\n  \"document_status\": \"PENDING\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variable": []
+}
