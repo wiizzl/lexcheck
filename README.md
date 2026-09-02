@@ -1,5 +1,7 @@
 # LexCheck
 
+![Tests](https://github.com/wiizzl/lexcheck/actions/workflows/ci.yaml/badge.svg)
+
 A Proof of Concept (PoC) REST API for regulatory compliance and document validation.
 
 ## Stack
